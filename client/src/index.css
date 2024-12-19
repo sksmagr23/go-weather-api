@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+*{
+  font-family: "Chakra Petch", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.bgc{
+    background: rgb(137,216,255);
+    background: radial-gradient(circle, rgba(137,216,255,1) 0%, rgba(16,138,220,1) 50%, rgb(1, 103, 154) 75%, rgba(2,83,119,1) 100%);
+}
+
+.bgh{
+    background: rgb(77, 189, 245);
+    background: radial-gradient(circle, rgba(16,138,220,1) 0%, rgba(0,118,177,1) 50%, rgb(1, 69, 99) 100%);
+}
+
+.bgcard{
+    background: rgb(184, 222, 253);
+    background: radial-gradient(circle, rgb(212, 234, 254) 0%, rgb(164, 209, 255) 50%, rgb(121, 197, 255) 100%);
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22), 10px 10px 0px 0px #449cdf, 15px 15px 0px 0px #2975ae;
+    box-sizing: border-box;
+    backdrop-filter: blur(6px);
+    transition: all 0.5s;
+}
+
+.bgcard:hover {
+  border: 1px solid black;
+  transform: scale(1.02);
+}
+
+.bgcard:active {
+  transform: rotateZ(1.3deg);
+}
+
+.input {
+ border: none;
+ background: #e8e8e8;
+ box-shadow: 20px 20px 60px #c5c5c5,
+		-20px -20px 60px #ffffff;
+ transition: 0.2s;
+}
+
+.input:focus {
+ outline-color: #d3d1d1;
+ background: #e8e8e8;
+ box-shadow: inset 20px 20px 60px #c5c5c5,
+		inset -20px -20px 60px #ffffff;
+ transition: 0.2s;
+}
